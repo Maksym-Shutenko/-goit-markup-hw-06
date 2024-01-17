@@ -139,11 +139,17 @@
                   <li class="team-list">
                      <img
                         class="team-img"
-                        src="./images/img-3.jpg"
+                        srcset="
+                           ./images/team/img@1x-3.jpg 1x,
+                           ./images/team/img@2x-3.jpg 2x
+                        "
+                        src="./images/team/img@1x-3.jpg"
                         alt="young bearded man"
                         width="264"
                         height="260"
+                        loading="lazy"
                      />
+
                      <div class="team-block">
                         <h3 class="name-title">Mark Guerrero</h3>
                         <p class="name-profesion">Product Designer</p>
@@ -206,7 +212,11 @@
                   <li class="team-list">
                      <img
                         class="team-img"
-                        src="./images/img-2.jpg"
+                        srcset="
+                           ./images/team/img@1x-2.jpg 1x,
+                           ./images/team/img@2x-2.jpg 2x
+                        "
+                        src="./images/team/img@1x-2.jpg"
                         alt="young smiling man"
                         width="264"
                         height="260"
@@ -273,7 +283,11 @@
                   <li class="team-list">
                      <img
                         class="team-img"
-                        src="./images/img-1.jpg"
+                        srcset="
+                           ./images/team/img@1x-1.jpg 1x,
+                           ./images/team/img@2x-1.jpg 2x
+                        "
+                        src="./images/team/img@1x-1.jpg"
                         alt="Pretty Girl"
                         width="264"
                         height="260"
@@ -340,7 +354,11 @@
                   <li class="team-list">
                      <img
                         class="team-img"
-                        src="./images/img.jpg"
+                        srcset="
+                           ./images/team/img@1x.jpg 1x,
+                           ./images/team/img@2x.jpg 2x
+                        "
+                        src="./images/team/img@1x.jpg"
                         alt="a young man in a t-shirt"
                         width="264"
                         height="260"
@@ -414,13 +432,32 @@
                <ul class="portfolio">
                   <li class="port-list list">
                      <div class="portfolio-wrapper">
-                        <img
-                           class="port-img"
-                           src="./images/portfolio/img-1.jpg"
-                           alt="banking application is shown"
-                           width="360"
-                           height="300"
-                        />
+                        <picture>
+                           <!--? Desctop -->
+                           <source
+                              media="(min-width: 768px)"
+                              srcset="
+                                 ./images/portfolio/img_desc@1x-5.jpg 1x,
+                                 ./images/portfolio/img_desc@2x-5.jpg 2x
+                              "
+                           />
+                           <!--? Mobile -->
+                           <source
+                              media="(max-width: 767)"
+                              srcset="
+                                 ./images/portfolio/img_mob@1x-5.jpg 1x,
+                                 ./images/portfolio/img_mob@2x-5.jpg 2x
+                              "
+                           />
+                           <img
+                              class="port-img"
+                              src="./images/portfolio/img_mob@1x-5.jpg"
+                              alt="banking application is shown"
+                              width="360"
+                              height="300"
+                              loading="lazy"
+                           />
+                        </picture>
                         <p class="overlay">
                            14 Stylish and User-Friendly App Design Concepts ·
                            Task Manager App · Calorie Tracker App · Exotic Fruit
@@ -434,13 +471,32 @@
                   </li>
                   <li class="port-list list">
                      <div class="portfolio-wrapper">
-                        <img
-                           class="port-img"
-                           src="./images/portfolio/img-2.jpg"
-                           alt="payment is made by phone"
-                           width="360"
-                           height="300"
-                        />
+                        <picture>
+                           <!--? Desctop -->
+                           <source
+                              media="(min-width: 768px)"
+                              srcset="
+                                 ./images/portfolio/img_desc@1x-4.jpg 1x,
+                                 ./images/portfolio/img_desc@2x-4.jpg 2x
+                              "
+                           />
+                           <!--? Mobile -->
+                           <source
+                              media="(max-width: 767)"
+                              srcset="
+                                 ./images/portfolio/img_mob@1x-4.jpg 1x,
+                                 ./images/portfolio/img_mob@2x-4.jpg 2x
+                              "
+                           />
+                           <img
+                              class="port-img"
+                              src="./images/portfolio/img_mob@1x-4.jpg"
+                              alt="payment is made by phone"
+                              width="360"
+                              height="300"
+                              loading="lazy"
+                           />
+                        </picture>
                         <p class="overlay">
                            14 Stylish and User-Friendly App Design Concepts ·
                            Task Manager App · Calorie Tracker App · Exotic Fruit
@@ -454,13 +510,32 @@
                   </li>
                   <li class="port-list list">
                      <div class="portfolio-wrapper">
-                        <img
-                           class="port-img"
-                           src="./images/portfolio/img-3.jpg"
-                           alt="laptop and phone"
-                           width="360"
-                           height="300"
-                        />
+                        <picture>
+                           <!--? Desctop -->
+                           <source
+                              media="(min-width: 768px)"
+                              srcset="
+                                 ./images/portfolio/img_desc@1x-3.jpg 1x,
+                                 ./images/portfolio/img_desc@2x-3.jpg 2x
+                              "
+                           />
+                           <!--? Mobile -->
+                           <source
+                              media="(max-width: 767)"
+                              srcset="
+                                 ./images/portfolio/img_mob@1x-3.jpg 1x,
+                                 ./images/portfolio/img_mob@2x-3.jpg 2x
+                              "
+                           />
+                           <img
+                              class="port-img"
+                              src="./images/portfolio/img_mob@1x-3.jpg"
+                              alt="laptop and phone"
+                              width="360"
+                              height="300"
+                              loading="lazy"
+                           />
+                        </picture>
                         <p class="overlay">
                            14 Stylish and User-Friendly App Design Concepts ·
                            Task Manager App · Calorie Tracker App · Exotic Fruit
@@ -474,13 +549,32 @@
                   </li>
                   <li class="port-list list">
                      <div class="portfolio-wrapper">
-                        <img
-                           class="port-img"
-                           src="./images/portfolio/img-4.jpg"
-                           alt="driving a car"
-                           width="360"
-                           height="300"
-                        />
+                        <picture>
+                           <!--? Desctop -->
+                           <source
+                              media="(min-width: 768px)"
+                              srcset="
+                                 ./images/portfolio/img_desc@1x-2.jpg 1x,
+                                 ./images/portfolio/img_desc@2x-2.jpg 2x
+                              "
+                           />
+                           <!--? Mobile -->
+                           <source
+                              media="(max-width: 767)"
+                              srcset="
+                                 ./images/portfolio/img_mob@1x-2.jpg 1x,
+                                 ./images/portfolio/img_mob@2x-2.jpg 2x
+                              "
+                           />
+                           <img
+                              class="port-img"
+                              src="./images/portfolio/img_mob@1x-2.jpg"
+                              alt="driving a car"
+                              width="360"
+                              height="300"
+                              loading="lazy"
+                           />
+                        </picture>
                         <p class="overlay">
                            14 Stylish and User-Friendly App Design Concepts ·
                            Task Manager App · Calorie Tracker App · Exotic Fruit
@@ -494,13 +588,32 @@
                   </li>
                   <li class="port-list list">
                      <div class="portfolio-wrapper">
-                        <img
-                           class="port-img"
-                           src="./images/portfolio/img-5.jpg"
-                           alt="a selection of wallpapers for the phone"
-                           width="360"
-                           height="300"
-                        />
+                        <picture>
+                           <!--? Desctop -->
+                           <source
+                              media="(min-width: 768px)"
+                              srcset="
+                                 ./images/portfolio/img_desc@1x-1.jpg 1x,
+                                 ./images/portfolio/img_desc@2x-1.jpg 2x
+                              "
+                           />
+                           <!--? Mobile -->
+                           <source
+                              media="(max-width: 767)"
+                              srcset="
+                                 ./images/portfolio/img_mob@1x-1.jpg 1x,
+                                 ./images/portfolio/img_mob@2x-1.jpg 2x
+                              "
+                           />
+                           <img
+                              class="port-img"
+                              src="./images/portfolio/img_mob@1x-1.jpg"
+                              alt="a selection of wallpapers for the phone"
+                              width="360"
+                              height="300"
+                              loading="lazy"
+                           />
+                        </picture>
                         <p class="overlay">
                            14 Stylish and User-Friendly App Design Concepts ·
                            Task Manager App · Calorie Tracker App · Exotic Fruit
@@ -514,13 +627,32 @@
                   </li>
                   <li class="port-list list">
                      <div class="portfolio-wrapper">
-                        <img
-                           class="port-img"
-                           src="./images/portfolio/img-6.jpg"
-                           alt="the girl is talking on the phone"
-                           width="360"
-                           height="300"
-                        />
+                        <picture>
+                           <!--? Desctop -->
+                           <source
+                              media="(min-width: 768px)"
+                              srcset="
+                                 ./images/portfolio/img_desc@1x.jpg 1x,
+                                 ./images/portfolio/img_desc@2x.jpg 2x
+                              "
+                           />
+                           <!--? Mobile -->
+                           <source
+                              media="(max-width: 767)"
+                              srcset="
+                                 ./images/portfolio/img_mob@1x.jpg 1x,
+                                 ./images/portfolio/img_mob@2x.jpg 2x
+                              "
+                           />
+                           <img
+                              class="port-img"
+                              src="./images/portfolio/img_mob@1x.jpg"
+                              alt="the girl is talking on the phone"
+                              width="360"
+                              height="300"
+                              loading="lazy"
+                           />
+                        </picture>
                         <p class="overlay">
                            14 Stylish and User-Friendly App Design Concepts ·
                            Task Manager App · Calorie Tracker App · Exotic Fruit

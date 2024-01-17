@@ -615,6 +615,23 @@ img {
    }
 }
 
+.port-img {
+   width: 288px;
+   height: 280px;
+}
+@media only screen and (min-width: 768px) {
+   .port-img {
+      width: 356px;
+      height: 300px;
+   }
+}
+@media only screen and (min-width: 1158px) {
+   .port-img {
+      width: 360px;
+      height: 300px;
+   }
+}
+
 /*? ----------------- */
 
 /*? ---- Footer ---- */
