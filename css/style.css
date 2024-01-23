@@ -128,7 +128,7 @@ img {
 
 .menu-item-block {
    display: flex;
-   gap: 12px;
+   gap: 40px;
 }
 @media only screen and (max-width: 767.98px) {
    .menu-item-block {
@@ -146,7 +146,7 @@ img {
    font-weight: 500;
    line-height: 1.5;
    letter-spacing: 0.02em;
-   padding: 24px 0;
+   padding: 27px 0;
 }
 .item-link.active {
    position: relative;
@@ -221,12 +221,12 @@ img {
 }
 @media only screen and (min-width: 768px) {
    .container-hero {
-      padding: 112px 136px;
+      padding: 112px;
    }
 }
 @media only screen and (min-width: 1158px) {
    .container-hero {
-      padding: 188px 472px;
+      padding: 188px;
    }
 }
 
@@ -235,14 +235,13 @@ img {
    background-color: #2e2f42;
    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-name.jpg);
    background-repeat: no-repeat;
-   padding: 188px 0;
    background-position: center;
    background-size: cover;
    margin: 0 auto;
 }
 
 .hero-title {
-   max-width: 496px;
+   width: 220px;
    color: #fff;
    text-align: center;
    font-size: 36px;
@@ -256,12 +255,14 @@ img {
 }
 @media only screen and (min-width: 768px) {
    .hero-title {
+      width: 496px;
+      justify-content: center;
       font-size: 56px;
       line-height: 1.07;
       margin-bottom: 36px;
    }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1158px) {
    .hero-title {
       margin-bottom: 48px;
    }
@@ -390,6 +391,7 @@ img {
 }
 
 .princips-text {
+   font-size: 16px;
    line-height: 1.5;
    letter-spacing: 0.02em;
    font-weight: 500;
@@ -409,8 +411,6 @@ img {
 .team {
    background-color: #f4f4fd;
 }
-
-/** ---- Mobil ---- */
 
 .team-section {
    display: flex;
@@ -612,18 +612,18 @@ img {
 
 .port-img {
    width: 288px;
-   height: 280px;
+   height: 100%;
 }
 @media only screen and (min-width: 768px) {
    .port-img {
       width: 356px;
-      height: 300px;
+      height: 100%;
    }
 }
 @media only screen and (min-width: 1158px) {
    .port-img {
       width: 360px;
-      height: 300px;
+      height: 100%;
    }
 }
 
@@ -632,7 +632,7 @@ img {
 /*? ---- Footer ---- */
 
 .footer {
-   padding: 96px 0;
+   padding: 97.5px 0 96px;
    background-color: #2e2f42;
 }
 @media only screen and (max-width: 767.98px) {
@@ -736,7 +736,6 @@ img {
    height: 100%;
    background-color: #4d5ae5;
    border-radius: 50%;
-   /*display: flex;*/
    align-items: center;
    justify-content: center;
    fill: #f4f4fd;
@@ -1023,7 +1022,6 @@ input:checked + .form-label > .label-span {
    justify-content: center;
    align-items: center;
    font-family: "Roboto", sans-serif;
-   gap: 16px;
    padding: 8px 24px;
    max-width: 165px;
    height: 40px;
