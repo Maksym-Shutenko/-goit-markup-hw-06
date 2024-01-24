@@ -34,6 +34,7 @@ p {
 img {
    display: block;
    max-width: 100%;
+   height: auto;
 }
 
 /*? --- Header --- */
@@ -521,7 +522,13 @@ img {
    flex-wrap: wrap;
    justify-content: center;
    align-items: center;
-   gap: 48px;
+   gap: 72px 24px;
+}
+
+@media only screen and (min-width: 768px) {
+   .portfolio {
+      gap: 48px 24px;
+   }
 }
 
 .port-list:hover {
@@ -545,17 +552,16 @@ img {
 .port-list {
    background-color: #fff;
    width: 100%;
-   min-width: 288px;
 }
 
 @media screen and (min-width: 768px) {
    .port-list {
-      width: calc((100% - 24px * 2) / 3);
+      width: calc((100% - 24px) / 2);
    }
 }
 @media only screen and (min-width: 1158px) {
    .port-list {
-      width: calc((100% - 24px * 3) / 4);
+      width: calc((100% - 24px * 2) / 3);
    }
 }
 
@@ -602,20 +608,6 @@ img {
          0px 1px 6px rgba(46, 47, 66, 0.08),
          0px 1px 1px rgba(46, 47, 66, 0.16),
          0px 2px 1px rgba(46, 47, 66, 0.08);
-   }
-}
-
-.port-img {
-   width: 288px;
-}
-@media only screen and (min-width: 768px) {
-   .port-img {
-      width: 356px;
-   }
-}
-@media only screen and (min-width: 1158px) {
-   .port-img {
-      width: 360px;
    }
 }
 
